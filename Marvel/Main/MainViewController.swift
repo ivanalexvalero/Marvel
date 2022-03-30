@@ -9,16 +9,18 @@ import UIKit
 import FirebaseAuth
 
 class MainViewController: UIViewController {
+    
 
     var rootPageViewController : RootPageViewController!
     
-
+    @IBOutlet weak var tabsView: TabsView!
     
+    private var options: [String] = ["Characters", "Events", "Log out"]
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
         super.viewDidLoad()
-
-
+        
+        tabsView.buildView(delegate: self, options: options)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,4 +41,10 @@ extension MainViewController: RootPageProtocol {
     }
     
     
+}
+
+extension MainViewController: TabsViewProtocol {
+    func didSelectOption(index: Int) {
+        print("index: ", index)
+    }
 }

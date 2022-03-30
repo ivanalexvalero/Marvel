@@ -5,7 +5,7 @@
 //  Created by Ivan Valero on 25/03/2022.
 //
 
-import UIKit  
+import UIKit
 
 protocol RootPageProtocol : AnyObject {
     func currentPage(_ index : Int)

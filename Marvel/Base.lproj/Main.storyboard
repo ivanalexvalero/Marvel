@@ -124,29 +124,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yby-Tb-cW5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="772"/>
                                 <connections>
                                     <segue destination="Hq5-uG-KnW" kind="embed" id="4qV-Uk-SJE"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpD-YH-z9f">
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSA-MK-oB8" customClass="TabsView" customModule="Marvel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="If5-Pb-lbS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LSA-MK-oB8" firstAttribute="leading" secondItem="bpD-YH-z9f" secondAttribute="leading" id="54d-JS-SZg"/>
+                                    <constraint firstItem="LSA-MK-oB8" firstAttribute="width" secondItem="bpD-YH-z9f" secondAttribute="width" id="Ch5-02-WX7"/>
+                                    <constraint firstAttribute="trailing" secondItem="LSA-MK-oB8" secondAttribute="trailing" id="OTA-2W-5Dd"/>
+                                    <constraint firstItem="LSA-MK-oB8" firstAttribute="top" secondItem="bpD-YH-z9f" secondAttribute="top" id="atF-ob-aKY"/>
+                                    <constraint firstItem="LSA-MK-oB8" firstAttribute="centerX" secondItem="bpD-YH-z9f" secondAttribute="centerX" id="yzL-aH-tqc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bZX-3U-Xfa"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bpD-YH-z9f" secondAttribute="bottom" id="6kA-5v-mKE"/>
+                            <constraint firstItem="bZX-3U-Xfa" firstAttribute="trailing" secondItem="bpD-YH-z9f" secondAttribute="trailing" id="ChN-MP-rp2"/>
+                            <constraint firstAttribute="bottom" secondItem="yby-Tb-cW5" secondAttribute="bottom" constant="80" id="HhA-lq-3xn"/>
                             <constraint firstItem="yby-Tb-cW5" firstAttribute="top" secondItem="bZX-3U-Xfa" secondAttribute="top" id="IJ6-zy-MXY"/>
+                            <constraint firstItem="bpD-YH-z9f" firstAttribute="leading" secondItem="bZX-3U-Xfa" secondAttribute="leading" id="PHM-dd-Ypz"/>
                             <constraint firstItem="yby-Tb-cW5" firstAttribute="leading" secondItem="bZX-3U-Xfa" secondAttribute="leading" id="UEr-jk-n6T"/>
-                            <constraint firstItem="bZX-3U-Xfa" firstAttribute="bottom" secondItem="yby-Tb-cW5" secondAttribute="bottom" id="WiD-jH-WmA"/>
                             <constraint firstItem="bZX-3U-Xfa" firstAttribute="trailing" secondItem="yby-Tb-cW5" secondAttribute="trailing" id="d2n-zT-bEW"/>
+                            <constraint firstItem="bpD-YH-z9f" firstAttribute="top" secondItem="yby-Tb-cW5" secondAttribute="bottom" id="kKO-fd-jW4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="y1X-4j-66j"/>
                     <connections>
+                        <outlet property="tabsView" destination="LSA-MK-oB8" id="wfB-6w-B13"/>
                         <outlet property="view" destination="SJ2-xv-WBD" id="Wlz-4D-JWQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lF-Qa-Ws0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1443" y="80"/>
+            <point key="canvasLocation" x="1442.0289855072465" y="79.6875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FcS-JR-ese">
@@ -213,6 +238,9 @@
         <image name="LogoMarvel" width="650" height="650"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
