@@ -15,9 +15,9 @@ class ServiceLayer {
         //Get query parameters
         var serviceUrl = URLComponents(string: requestModel.getURL())
         serviceUrl?.queryItems = buildQueryItems(params: requestModel.queryItems ?? [:])
-        serviceUrl?.queryItems?.append(URLQueryItem(name: "key", value: Constants.apiKey))
-        serviceUrl?.queryItems?.append(URLQueryItem(name: "ts", value: Constants.ts))
+        serviceUrl?.queryItems?.append(URLQueryItem(name: "apikey", value: Constants.apiKey))
         serviceUrl?.queryItems?.append(URLQueryItem(name: "hash", value: Constants.hash))
+        serviceUrl?.queryItems?.append(URLQueryItem(name: "ts", value: Constants.ts))
         
         
         //Unwrap URL
@@ -43,10 +43,12 @@ class ServiceLayer {
                 let decodeData = try decoder.decode(T.self, from: data)
                 return decodeData
             }catch {
+                print(error)
                 throw NetworkError.couldNotDecodeData
             }
             
         }catch{
+            print(error)
             throw NetworkError.generic
         }
         

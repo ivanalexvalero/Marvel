@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,10 +12,12 @@
         <!--Navigation Controller-->
         <scene sceneID="Zfg-P8-SCU">
             <objects>
-                <navigationController id="jQs-g2-4fH" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jQs-g2-4fH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JvO-ur-V8D">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wp3-59-t9S"/>
@@ -55,11 +58,13 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKn-X6-uNB">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wuI-FZ-PRI">
                                         <rect key="frame" x="0.0" y="50" width="382" height="40"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -79,7 +84,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOk-1g-P4m">
                                                 <rect key="frame" x="195" y="0.0" width="187" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                                 <connections>
@@ -95,7 +100,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="g0X-gA-UE9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F69-Dv-yxr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ovw-J6-4PJ" secondAttribute="trailing" constant="16" id="O6P-GS-SpC"/>
@@ -115,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="79.6875"/>
         </scene>
-        <!--Main View Controller-->
+        <!--View Controller-->
         <scene sceneID="gPj-yl-YCe">
             <objects>
-                <viewController storyboardIdentifier="home" id="pDL-hb-Hqy" customClass="MainViewController" customModule="Marvel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pDL-hb-Hqy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SJ2-xv-WBD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,47 +178,94 @@
             </objects>
             <point key="canvasLocation" x="1442.0289855072465" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="FcS-JR-ese">
             <objects>
-                <viewController id="BkO-YF-Dow" sceneMemberID="viewController">
+                <viewController id="BkO-YF-Dow" customClass="MainViewController" customModule="Marvel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L3C-z7-FIn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fcf-Sc-VBP">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="715"/>
                                 <connections>
                                     <segue destination="3v8-Vh-3D7" kind="embed" id="dYl-H5-Ln7"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fA8-n5-ReZ">
+                                <rect key="frame" x="334" y="722" width="60" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieA-pA-t9M">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="16r-MU-ZfM"/>
+                                            <constraint firstAttribute="height" constant="60" id="v7v-ib-LdI"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
+                                            <imageReference key="image" image="xmark.app" catalog="system" renderingMode="original"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="logoutButtonAction:" destination="BkO-YF-Dow" eventType="touchUpInside" id="Urr-0J-etU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ieA-pA-t9M" firstAttribute="leading" secondItem="fA8-n5-ReZ" secondAttribute="leading" id="Dbd-JG-pgK"/>
+                                    <constraint firstItem="ieA-pA-t9M" firstAttribute="top" secondItem="fA8-n5-ReZ" secondAttribute="top" id="Lys-aP-pvG"/>
+                                    <constraint firstAttribute="height" constant="60" id="UyS-rG-XoL"/>
+                                    <constraint firstAttribute="bottom" secondItem="ieA-pA-t9M" secondAttribute="bottom" id="ZBx-9E-iB0"/>
+                                    <constraint firstAttribute="trailing" secondItem="ieA-pA-t9M" secondAttribute="trailing" id="dPq-Ex-3CR"/>
+                                    <constraint firstAttribute="width" constant="60" id="t0l-fY-nAb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dzd-3e-m3C" customClass="Buttons" customModule="Marvel" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="e1o-rX-vLD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nkq-1M-hwL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Fcf-Sc-VBP" firstAttribute="leading" secondItem="nkq-1M-hwL" secondAttribute="leading" id="71m-gi-akR"/>
-                            <constraint firstItem="nkq-1M-hwL" firstAttribute="bottom" secondItem="Fcf-Sc-VBP" secondAttribute="bottom" id="96u-dO-Rhk"/>
+                            <constraint firstItem="nkq-1M-hwL" firstAttribute="bottom" secondItem="Fcf-Sc-VBP" secondAttribute="bottom" constant="59" id="96u-dO-Rhk"/>
+                            <constraint firstItem="Dzd-3e-m3C" firstAttribute="trailing" secondItem="nkq-1M-hwL" secondAttribute="trailing" id="Tzw-mu-Sow"/>
                             <constraint firstItem="Fcf-Sc-VBP" firstAttribute="top" secondItem="nkq-1M-hwL" secondAttribute="top" id="e8k-NB-fBp"/>
+                            <constraint firstItem="Dzd-3e-m3C" firstAttribute="leading" secondItem="nkq-1M-hwL" secondAttribute="leading" id="irQ-PA-Awa"/>
+                            <constraint firstItem="Dzd-3e-m3C" firstAttribute="bottom" secondItem="nkq-1M-hwL" secondAttribute="bottom" id="kOW-wF-y6P"/>
+                            <constraint firstItem="nkq-1M-hwL" firstAttribute="trailing" secondItem="fA8-n5-ReZ" secondAttribute="trailing" constant="20" id="sgE-G1-5Xx"/>
+                            <constraint firstItem="nkq-1M-hwL" firstAttribute="bottom" secondItem="fA8-n5-ReZ" secondAttribute="bottom" constant="80" id="u1E-4V-xgw"/>
                             <constraint firstItem="nkq-1M-hwL" firstAttribute="trailing" secondItem="Fcf-Sc-VBP" secondAttribute="trailing" id="x4A-19-25l"/>
+                            <constraint firstItem="Dzd-3e-m3C" firstAttribute="top" secondItem="Fcf-Sc-VBP" secondAttribute="bottom" constant="-1" id="yA9-sU-cZo"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XyP-5R-cQd"/>
+                    <connections>
+                        <outlet property="buttonsView" destination="Dzd-3e-m3C" id="zrO-qI-Lr0"/>
+                        <outlet property="logoutButton" destination="ieA-pA-t9M" id="186-CC-DMC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vlc-46-NMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1310" y="735"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="gp0-yn-uRW">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="3v8-Vh-3D7" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eaH-AU-HAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2163" y="734"/>
+            <point key="canvasLocation" x="2218.840579710145" y="734.59821428571422"/>
         </scene>
         <!--Root Page View Controller-->
+        <scene sceneID="gp0-yn-uRW">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="3v8-Vh-3D7" customClass="RootPageViewController" customModule="Marvel" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaH-AU-HAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3072.4637681159425" y="733.59375"/>
+        </scene>
+        <!--Page View Controller-->
         <scene sceneID="C3T-D1-a4T">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Hq5-uG-KnW" customClass="RootPageViewController" customModule="Marvel" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Hq5-uG-KnW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVh-zb-FgR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2216" y="80"/>
@@ -233,26 +285,54 @@
             </objects>
             <point key="canvasLocation" x="2978" y="80"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="26L-gg-Ka7">
+            <objects>
+                <navigationController storyboardIdentifier="home" automaticallyAdjustsScrollViewInsets="NO" id="9nf-3w-hyG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="Yoe-1q-KlN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cgk-g8-cGu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BkO-YF-Dow" kind="relationship" relationship="rootViewController" id="MJN-XO-B6h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEU-Gk-gkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308.6956521739132" y="734.59821428571422"/>
+        </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="LogoMarvel" width="650" height="650"/>
+        <image name="xmark.app" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
