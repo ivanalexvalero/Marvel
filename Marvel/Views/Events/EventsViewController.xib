@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsViewController" customModule="Marvel" customModuleProvider="target">
             <connections>
+                <outlet property="tableViewEvents" destination="9cy-zG-TER" id="gS3-1x-Jdf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +18,30 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9cy-zG-TER">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3cg-pv-dOZ"/>
+                        <outlet property="delegate" destination="-1" id="cgg-sV-eCK"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9cy-zG-TER" secondAttribute="trailing" id="0OC-I0-HB0"/>
+                <constraint firstItem="9cy-zG-TER" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ALs-ih-9GL"/>
+                <constraint firstItem="9cy-zG-TER" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="I57-3b-lKv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9cy-zG-TER" secondAttribute="bottom" id="KeX-mb-JMV"/>
+            </constraints>
             <point key="canvasLocation" x="132" y="76"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

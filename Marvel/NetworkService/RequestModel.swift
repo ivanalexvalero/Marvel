@@ -13,9 +13,27 @@ struct RequestModel {
     var queryItems: [String:String]?
     let httpMethod: HttpMethod = .GET
     var baseUrl: URLBase = .marvel
+    let route: Route
+
+    enum Route {
+
+        case details(String)
+        case noneId
+
+        
+        var description: String {
+            switch self {
+            case .details(let detailsId):
+                return "/\(detailsId)"
+            case .noneId:
+                return ""
+            }
+        }
+    }
+
     
     func getURL() -> String {
-        return baseUrl.rawValue + endpoint.rawValue
+        return baseUrl.rawValue + endpoint.rawValue + route.description
     }
     
     enum HttpMethod: String {
@@ -23,13 +41,15 @@ struct RequestModel {
         case POST
     }
     
-    enum Endpoints: String {
-        case search = "/characters"
-        case empty = ""
+    enum Endpoints: String   {
+
+           case character = "/characters"
+           case events = "/events"
+           case empty = ""
     }
     
     enum URLBase: String {
-        case marvel = "https://gateway.marvel.com:443/v1/public"
+        case marvel = "https://gateway.marvel.com/v1/public"
     }
     
     

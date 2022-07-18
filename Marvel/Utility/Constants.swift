@@ -8,7 +8,7 @@
 import Foundation
 
 struct Constants {
-    static let apiKey = "2cc72765ba9246b43780ff833009f9c7"
+    static let apiKey = "3a783b25c80e1c44875356dd363f272d"
     static let ts = "1"
     static let hash = "51a3ecf2f92a23817992a2663183325e"
     
