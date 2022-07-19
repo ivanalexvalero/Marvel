@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
                     self.present(vc, animated: true)
                     
                 } else {
-                    let alertController = UIAlertController(title: "Error", message: "Se ha producido un error al registrar el nuevo usuario", preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Error", message: "El usuario no existe o correo electronico no valido", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
                     self.present(alertController, animated: true, completion: nil)
                 }
