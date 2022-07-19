@@ -62,6 +62,20 @@ class EventsDetailsViewController: UIViewController {
         nameEventsDetails.text = nameEvents
         titleEventsDetails.text = "Cómics para discutir"
         dateEventsDetails.text = toString(dateModel: modifiedEvents)
+<<<<<<< HEAD
+=======
+        
+//        let dateEvents = startEvents
+//        
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.locale = Locale(identifier: "es_US")
+//        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+//        guard let dateNew = dateFormatter.date(from: dateEvents) ?? nil else { return  }
+//        let calendar = Calendar.current
+//        let components = calendar.dateComponents([.year], from: dateNew)
+//        print("fecha: ", components)
+//        dateEventsDetails.text = "\(components)"
+>>>>>>> firstTests
     }
     
     func configTableView() {

@@ -48,6 +48,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         buttonsView.buildView(delegate: self, options: options)
+<<<<<<< HEAD
         
         title = "Marvel Challenge"
         logoutButton.layer.cornerRadius = 15
@@ -89,6 +90,27 @@ class MainViewController: UIViewController {
             print("Cancel close session")
         }))
         self.present(refreshAlert, animated: true, completion: nil)
+=======
+        
+        title = "Marvel Challenge"
+        logoutButton.layer.cornerRadius = 15
+    }
+    
+    @IBAction func logoutButtonAction(_ sender: Any) {
+        do{
+            try Auth.auth().signOut()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "login")
+//            let vc = LoginViewController()
+//            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true)
+            
+            
+        }catch{
+            // error
+            print(error)
+        }
+>>>>>>> firstTests
     }
     
     

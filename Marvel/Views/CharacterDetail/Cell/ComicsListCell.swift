@@ -22,8 +22,19 @@ class ComicsListCell: UITableViewCell {
     }
 
     func configCell(model: CharacterModel.DataClass.Result) {
+<<<<<<< HEAD
         comicName.text = model.comics.items.first?.name
 
+=======
+//        let cell = items.comics.items.map({$0.name})
+//        for value in model.comics.items {
+//            comicName.text = value.name
+//            print("Valores: ",value)
+//        }
+        comicName.text = model.comics.items.first?.name
+//        comicName.text = array.map($0.name)
+//        print(comicName.text)
+>>>>>>> firstTests
     }
    
     func configCellEvents(items: EventsModel.DataClass.Result){
