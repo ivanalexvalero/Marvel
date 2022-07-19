@@ -54,19 +54,41 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func logoutButtonAction(_ sender: Any) {
-        do{
-            try Auth.auth().signOut()
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "login")
-//            let vc = LoginViewController()
-//            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: true)
-            
-            
-        }catch{
-            // error
-            print(error)
-        }
+//        do{
+//            try Auth.auth().signOut()
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "login")
+////            let vc = LoginViewController()
+////            vc.modalPresentationStyle = .overFullScreen
+//            self.present(vc, animated: true)
+//
+//
+//        }catch{
+//            // error
+//            print(error)
+//        }
+        
+        var refreshAlert = UIAlertController(title: "Close Session", message: "Want to quit the app?", preferredStyle: UIAlertController.Style.alert)
+        refreshAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
+            do{
+                try Auth.auth().signOut()
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "login")
+    //            let vc = LoginViewController()
+    //            vc.modalPresentationStyle = .overFullScreen
+                self.present(vc, animated: true)
+                
+                
+            }catch{
+                // error
+                print(error)
+            }
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction) in
+            print("Cancel close session")
+        }))
+        self.present(refreshAlert, animated: true, completion: nil)
     }
     
     

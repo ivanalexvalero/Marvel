@@ -40,6 +40,6 @@ class CharCell: UITableViewCell {
             charImage.kf.setImage(with: url2)
         }
         charName.text = model.name
-        charDescription.text = model.resultDescription ?? "Descripción"
+        charDescription.text = model.resultDescription ?? "Descriptionn"
     }
 }

@@ -57,13 +57,6 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.setData(model: events[indexPath.row])
             
-            
-//            events.sorted(by: { $0.modified ?? "0" < $1.modified ?? "1"})
-            
-//            let eventsSorted = events.sorted(by: { $0.title?.compare($1.title ?? "0") == .orderedDescending})
-            
-//            print(eventsSorted)
-            
             return cell
         }
         return UITableViewCell()

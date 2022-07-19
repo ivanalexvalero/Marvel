@@ -113,35 +113,9 @@ struct CharacterModel: Decodable {
                 }else {
                     self.modified = nil
                 }
-                
-//                if let resourceURI = try? container.decode(String.self, forKey: .resourceURI){
-//                    self.resourceURI = resourceURI
-//                }else {
-//                    self.resourceURI = nil
-//                }
+
                 self.comics = try container.decode(Comics.self, forKey: .comics)
-                
-                
-//                if let series = try? container.decode(Comics.self, forKey: .series){
-//                    self.series = series
-//                }else {
-//                    self.series = nil
-//                }
-//                if let stories = try? container.decode(Stories.self, forKey: .stories){
-//                    self.stories = stories
-//                }else {
-//                    self.stories = nil
-//                }
-//                if let events = try? container.decode(Comics.self, forKey: .events){
-//                    self.events = events
-//                }else {
-//                    self.events = nil
-//                }
-//                if let urls = try? container.decode(URLElement.self, forKey: .urls){
-//                    self.urls = urls
-//                }else {
-//                    self.urls = nil
-//                }
+
            
             }
             
