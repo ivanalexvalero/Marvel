@@ -190,8 +190,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+=======
             startingLineNumber = "111"
             endingLineNumber = "111"
+>>>>>>> firstTests
             landmarkName = "getData(list:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -315,8 +320,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+=======
             startingLineNumber = "62"
             endingLineNumber = "62"
+>>>>>>> firstTests
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -331,8 +341,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+=======
             startingLineNumber = "57"
             endingLineNumber = "57"
+>>>>>>> firstTests
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -347,8 +362,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+=======
             startingLineNumber = "58"
             endingLineNumber = "58"
+>>>>>>> firstTests
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -363,8 +383,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+=======
             startingLineNumber = "56"
             endingLineNumber = "56"
+>>>>>>> firstTests
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -379,8 +404,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+=======
             startingLineNumber = "61"
             endingLineNumber = "61"
+>>>>>>> firstTests
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -395,8 +425,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+=======
             startingLineNumber = "59"
             endingLineNumber = "59"
+>>>>>>> firstTests
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -411,8 +446,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+=======
             startingLineNumber = "64"
             endingLineNumber = "64"
+>>>>>>> firstTests
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -429,8 +469,13 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
+<<<<<<< HEAD
+            landmarkName = "unknown"
+            landmarkType = "0">
+=======
             landmarkName = "setData(model:)"
             landmarkType = "7">
+>>>>>>> firstTests
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -443,8 +488,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+=======
             startingLineNumber = "46"
             endingLineNumber = "46"
+>>>>>>> firstTests
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -459,8 +509,13 @@
             filePath = "Marvel/Views/Characters/CharacterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< HEAD
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+=======
             startingLineNumber = "108"
             endingLineNumber = "108"
+>>>>>>> firstTests
             landmarkName = "getData(list:)"
             landmarkType = "7">
          </BreakpointContent>

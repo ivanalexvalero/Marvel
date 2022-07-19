@@ -26,7 +26,10 @@ class CharacterDetailViewController: UIViewController {
     private var imageData: String = ""
     private var descriptionData: String = ""
     private var extensionImage: String = ""
+<<<<<<< HEAD
+=======
 //    private var items: String = ""
+>>>>>>> firstTests
     private var name: String = ""
     
     init(charId: String, imageData: String, descriptionData: String, extensionImage: String, name: String) {
@@ -35,7 +38,10 @@ class CharacterDetailViewController: UIViewController {
         self.imageData = imageData
         self.descriptionData = descriptionData
         self.extensionImage = extensionImage
+<<<<<<< HEAD
+=======
 //        self.items = items
+>>>>>>> firstTests
         self.name = name
     }
     
@@ -57,12 +63,18 @@ class CharacterDetailViewController: UIViewController {
     private func loadData(){
         Task{ [weak self] in
             await self?.presenter.getDetailData(charId: charId)
+<<<<<<< HEAD
+=======
             
+>>>>>>> firstTests
         }
     }
     
     func configTableViewDetails() {
+<<<<<<< HEAD
+=======
 //        tableViewComics.register(ComicsListCell.self, forCellReuseIdentifier: ComicsListCell.kId)
+>>>>>>> firstTests
         tableViewComics.register(UINib(nibName: ComicsListCell.kId, bundle: nil), forCellReuseIdentifier: ComicsListCell.kId)
         
         tableViewComics.delegate = self
@@ -99,7 +111,10 @@ extension CharacterDetailViewController: UITableViewDelegate, UITableViewDataSou
             
             detailCell.configCell(model: charDetail[indexPath.row])
             
+<<<<<<< HEAD
+=======
             
+>>>>>>> firstTests
             return detailCell
 
         }
