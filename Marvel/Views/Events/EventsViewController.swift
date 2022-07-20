@@ -57,8 +57,6 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.setData(model: events[indexPath.row])
             
-<<<<<<< HEAD
-=======
             
 //            events.sorted(by: { $0.modified ?? "0" < $1.modified ?? "1"})
             
@@ -66,7 +64,6 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
             
 //            print(eventsSorted)
             
->>>>>>> firstTests
             return cell
         }
         return UITableViewCell()
