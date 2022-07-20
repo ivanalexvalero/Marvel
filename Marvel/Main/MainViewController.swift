@@ -54,20 +54,32 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func logoutButtonAction(_ sender: Any) {
-        do{
-            try Auth.auth().signOut()
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "login")
-//            let vc = LoginViewController()
-//            vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: true)
-            
-            
-        }catch{
-            // error
-            print(error)
-        }
         
+        let buttonAlert = UIAlertController(title: "Logout", message: "Do you want to log out?", preferredStyle: UIAlertController.Style.alert)
+        buttonAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction) in
+            
+            do{
+                try Auth.auth().signOut()
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "login")
+    //            navigationController?.pushViewController(vc, animated: true)
+    //            let vc = LoginViewController()
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
+                
+                
+            }catch{
+                // error
+                print(error)
+            }
+            
+        }))
+        
+        buttonAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction) in
+            print("logout to app")
+        }))
+        
+        present(buttonAlert, animated: true, completion: nil)
     }
     
     
