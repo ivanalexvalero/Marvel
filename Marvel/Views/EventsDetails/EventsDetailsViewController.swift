@@ -62,8 +62,6 @@ class EventsDetailsViewController: UIViewController {
         nameEventsDetails.text = nameEvents
         titleEventsDetails.text = "Cómics para discutir"
         dateEventsDetails.text = toString(dateModel: modifiedEvents)
-<<<<<<< HEAD
-=======
         
 //        let dateEvents = startEvents
 //        
@@ -75,7 +73,6 @@ class EventsDetailsViewController: UIViewController {
 //        let components = calendar.dateComponents([.year], from: dateNew)
 //        print("fecha: ", components)
 //        dateEventsDetails.text = "\(components)"
->>>>>>> firstTests
     }
     
     func configTableView() {

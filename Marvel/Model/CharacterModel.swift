@@ -113,11 +113,6 @@ struct CharacterModel: Decodable {
                 }else {
                     self.modified = nil
                 }
-<<<<<<< HEAD
-
-                self.comics = try container.decode(Comics.self, forKey: .comics)
-
-=======
                 
 //                if let resourceURI = try? container.decode(String.self, forKey: .resourceURI){
 //                    self.resourceURI = resourceURI
@@ -147,7 +142,6 @@ struct CharacterModel: Decodable {
 //                }else {
 //                    self.urls = nil
 //                }
->>>>>>> firstTests
            
             }
             
