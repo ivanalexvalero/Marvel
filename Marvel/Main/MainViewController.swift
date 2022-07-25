@@ -9,12 +9,6 @@ import UIKit
 import SwiftUI
 import FirebaseAuth
 
-
-//struct OptionsModel {
-//    let title: String
-//    let image: UIImage
-//}
-
 class MainViewController: UIViewController {
 
    
@@ -39,9 +33,6 @@ class MainViewController: UIViewController {
         }
     }
     
-    
-//    var options2: [OptionsModel] = []
-    
     private var options: [buttonsModel] = [.init(name: "Character", image1: UIImage(systemName: "circle.hexagongrid") ?? UIImage()),.init(name: "Events", image1: UIImage(systemName: "calendar") ?? UIImage())]
     
     override func viewDidLoad() {
@@ -62,8 +53,6 @@ class MainViewController: UIViewController {
                 try Auth.auth().signOut()
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "login")
-    //            navigationController?.pushViewController(vc, animated: true)
-    //            let vc = LoginViewController()
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true)
                 

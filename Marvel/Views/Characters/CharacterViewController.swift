@@ -11,9 +11,7 @@ class CharacterViewController: UIViewController {
     
     @IBOutlet weak var tableViewCharacter: UITableView!
     private var objectList2: [[Any]] = []
-//    var model : [CharacterModel] = []
     lazy var presenter = HomePresenter(delegate: self)
-//    let cellSpacingHeight: CGFloat = 10.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,15 +25,11 @@ class CharacterViewController: UIViewController {
     }
     
     func configTableView(){
-//        let nibCharacter = UINib(nibName: "\(CharacterCell.self)", bundle: nil)
         tableViewCharacter.register(UINib(nibName: CharCell.kIdentifier, bundle: nil), forCellReuseIdentifier: CharCell.kIdentifier)
         tableViewCharacter.reloadData()
         
         tableViewCharacter.delegate = self
         tableViewCharacter.dataSource = self
-        
-//        tableViewCharacter.separatorColor = .clear
-//        tableViewCharacter.contentInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
     }
 
 
@@ -76,7 +70,6 @@ extension CharacterViewController: UITableViewDelegate, UITableViewDataSource {
             imageData = character[indexPath.row].thumbnail.path ?? ""
             descriptionData = character[indexPath.row].resultDescription ?? "Descripción"
             extensionImage = character[indexPath.row].thumbnail.thumbnailExtension?.rawValue ?? ""
-
             name = character[indexPath.row].name ?? ""
             
             let vc = CharacterDetailViewController(charId: "\(characterData)", imageData: imageData, descriptionData: descriptionData, extensionImage: extensionImage, name: name)

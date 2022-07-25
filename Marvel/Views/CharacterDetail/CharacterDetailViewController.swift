@@ -26,7 +26,6 @@ class CharacterDetailViewController: UIViewController {
     private var imageData: String = ""
     private var descriptionData: String = ""
     private var extensionImage: String = ""
-//    private var items: String = ""
     private var name: String = ""
     
     init(charId: String, imageData: String, descriptionData: String, extensionImage: String, name: String) {
@@ -35,7 +34,6 @@ class CharacterDetailViewController: UIViewController {
         self.imageData = imageData
         self.descriptionData = descriptionData
         self.extensionImage = extensionImage
-//        self.items = items
         self.name = name
     }
     
@@ -62,7 +60,6 @@ class CharacterDetailViewController: UIViewController {
     }
     
     func configTableViewDetails() {
-//        tableViewComics.register(ComicsListCell.self, forCellReuseIdentifier: ComicsListCell.kId)
         tableViewComics.register(UINib(nibName: ComicsListCell.kId, bundle: nil), forCellReuseIdentifier: ComicsListCell.kId)
         
         tableViewComics.delegate = self
@@ -76,7 +73,7 @@ class CharacterDetailViewController: UIViewController {
             detailImage.kf.setImage(with: url)
         }
         descriptionDetailLabel.text = descriptionData
-//        nameComics.text = charModel?.name
+
         titleListLevel.text = "Lista de Comics"
     }
 
@@ -98,10 +95,8 @@ extension CharacterDetailViewController: UITableViewDelegate, UITableViewDataSou
             }
             
             detailCell.configCell(model: charDetail[indexPath.row])
-            
-            
+    
             return detailCell
-
         }
         return UITableViewCell()
 

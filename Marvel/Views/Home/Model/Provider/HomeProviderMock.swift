@@ -7,14 +7,3 @@
 
 import Foundation
 
-//
-//class HomeProviderMock: HomeProviderProtocol {
-//    func getCharacters() async throws -> CharacterModel {
-//        guard let model = Utils.parseJson(jsonName: "Character", model: CharacterModel.self) else {
-//            throw NetworkError.jsonDecoder
-//        }
-//        return model
-//    }
-//    
-//    
-//}
