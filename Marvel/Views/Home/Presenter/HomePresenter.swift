@@ -11,11 +11,11 @@ protocol HomeViewProtocol: AnyObject {
     func getData(list : [[Any]])
 }
 
-class HomePresenter {
+@MainActor class HomePresenter {
     
     var provider : HomeProviderProtocol
     weak var delegate: HomeViewProtocol?
-    private var objectList: [[Any]] = []
+    var objectList: [[Any]] = []
     var listDetails: [[Any]] = []
     
     init(delegate: HomeViewProtocol,provider: HomeProviderProtocol = HomeProvider()) {
@@ -23,7 +23,7 @@ class HomePresenter {
         self.delegate = delegate
     }
     
-    @MainActor
+    
     func getListData() async {
         objectList.removeAll()
         

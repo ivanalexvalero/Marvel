@@ -34,38 +34,6 @@
             endingLineNumber = "38"
             landmarkName = "getListData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FAD0DD9E-E6B5-4C7F-8BA4-4E2BBFD836D5 - 9b0fc11fcf54b34e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for Marvel.HomePresenter.getListData() async -&gt; ()"
-                  moduleName = "Marvel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanvalero/Documents/GitHub/Marvel/Marvel/Views/Home/Presenter/HomePresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "120">
-               </Location>
-               <Location
-                  uuid = "FAD0DD9E-E6B5-4C7F-8BA4-4E2BBFD836D5 - caa0ff188affe927"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(10) suspend resume partial function for Marvel.HomePresenter.getListData() async -&gt; ()"
-                  moduleName = "Marvel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanvalero/Documents/GitHub/Marvel/Marvel/Views/Home/Presenter/HomePresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "166">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -144,7 +112,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "52"
                   endingLineNumber = "52"
-                  offsetFromSymbolStart = "2811">
+                  offsetFromSymbolStart = "2865">
                </Location>
                <Location
                   uuid = "591DA450-08F8-4831-BDF0-3243112C03C2 - c4dc12a559422dc0"
@@ -159,7 +127,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "52"
                   endingLineNumber = "52"
-                  offsetFromSymbolStart = "703">
+                  offsetFromSymbolStart = "721">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -210,83 +178,6 @@
             endingLineNumber = "32"
             landmarkName = "getListData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "32144016-1E6F-4C15-BD64-7B79294ED8C2 - 6804b18a3e6a148c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Marvel.HomePresenter.getListData() async -&gt; ()"
-                  moduleName = "Marvel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanvalero/Documents/GitHub/Marvel/Marvel/Views/Home/Presenter/HomePresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "482">
-               </Location>
-               <Location
-                  uuid = "32144016-1E6F-4C15-BD64-7B79294ED8C2 - 2266279ffc48608d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) suspend resume partial function for Marvel.HomePresenter.getListData() async -&gt; ()"
-                  moduleName = "Marvel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanvalero/Documents/GitHub/Marvel/Marvel/Views/Home/Presenter/HomePresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "94">
-               </Location>
-               <Location
-                  uuid = "32144016-1E6F-4C15-BD64-7B79294ED8C2 - 2266279ffc48608d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) suspend resume partial function for Marvel.HomePresenter.getListData() async -&gt; ()"
-                  moduleName = "Marvel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanvalero/Documents/GitHub/Marvel/Marvel/Views/Home/Presenter/HomePresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "230">
-               </Location>
-               <Location
-                  uuid = "32144016-1E6F-4C15-BD64-7B79294ED8C2 - 9b0fc11fcf54b494"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for Marvel.HomePresenter.getListData() async -&gt; ()"
-                  moduleName = "Marvel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanvalero/Documents/GitHub/Marvel/Marvel/Views/Home/Presenter/HomePresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "82">
-               </Location>
-               <Location
-                  uuid = "32144016-1E6F-4C15-BD64-7B79294ED8C2 - 9b0fc11fcf54b494"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for Marvel.HomePresenter.getListData() async -&gt; ()"
-                  moduleName = "Marvel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanvalero/Documents/GitHub/Marvel/Marvel/Views/Home/Presenter/HomePresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

@@ -25,7 +25,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxS-ja-6vP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-696" y="80"/>
+            <point key="canvasLocation" x="-658" y="735"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -118,65 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44.927536231884062" y="79.6875"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gPj-yl-YCe">
-            <objects>
-                <viewController id="pDL-hb-Hqy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SJ2-xv-WBD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yby-Tb-cW5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="772"/>
-                                <connections>
-                                    <segue destination="Hq5-uG-KnW" kind="embed" id="4qV-Uk-SJE"/>
-                                </connections>
-                            </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpD-YH-z9f">
-                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSA-MK-oB8" customClass="TabsView" customModule="Marvel" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="If5-Pb-lbS"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="LSA-MK-oB8" firstAttribute="leading" secondItem="bpD-YH-z9f" secondAttribute="leading" id="54d-JS-SZg"/>
-                                    <constraint firstItem="LSA-MK-oB8" firstAttribute="width" secondItem="bpD-YH-z9f" secondAttribute="width" id="Ch5-02-WX7"/>
-                                    <constraint firstAttribute="trailing" secondItem="LSA-MK-oB8" secondAttribute="trailing" id="OTA-2W-5Dd"/>
-                                    <constraint firstItem="LSA-MK-oB8" firstAttribute="top" secondItem="bpD-YH-z9f" secondAttribute="top" id="atF-ob-aKY"/>
-                                    <constraint firstItem="LSA-MK-oB8" firstAttribute="centerX" secondItem="bpD-YH-z9f" secondAttribute="centerX" id="yzL-aH-tqc"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="bZX-3U-Xfa"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="bpD-YH-z9f" secondAttribute="bottom" id="6kA-5v-mKE"/>
-                            <constraint firstItem="bZX-3U-Xfa" firstAttribute="trailing" secondItem="bpD-YH-z9f" secondAttribute="trailing" id="ChN-MP-rp2"/>
-                            <constraint firstAttribute="bottom" secondItem="yby-Tb-cW5" secondAttribute="bottom" constant="80" id="HhA-lq-3xn"/>
-                            <constraint firstItem="yby-Tb-cW5" firstAttribute="top" secondItem="bZX-3U-Xfa" secondAttribute="top" id="IJ6-zy-MXY"/>
-                            <constraint firstItem="bpD-YH-z9f" firstAttribute="leading" secondItem="bZX-3U-Xfa" secondAttribute="leading" id="PHM-dd-Ypz"/>
-                            <constraint firstItem="yby-Tb-cW5" firstAttribute="leading" secondItem="bZX-3U-Xfa" secondAttribute="leading" id="UEr-jk-n6T"/>
-                            <constraint firstItem="bZX-3U-Xfa" firstAttribute="trailing" secondItem="yby-Tb-cW5" secondAttribute="trailing" id="d2n-zT-bEW"/>
-                            <constraint firstItem="bpD-YH-z9f" firstAttribute="top" secondItem="yby-Tb-cW5" secondAttribute="bottom" id="kKO-fd-jW4"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="y1X-4j-66j"/>
-                    <connections>
-                        <outlet property="tabsView" destination="LSA-MK-oB8" id="wfB-6w-B13"/>
-                        <outlet property="view" destination="SJ2-xv-WBD" id="Wlz-4D-JWQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5lF-Qa-Ws0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1442.0289855072465" y="79.6875"/>
+            <point key="canvasLocation" x="258" y="735"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="FcS-JR-ese">
@@ -262,29 +204,6 @@
             </objects>
             <point key="canvasLocation" x="3072.4637681159425" y="733.59375"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="C3T-D1-a4T">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Hq5-uG-KnW" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tVh-zb-FgR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2216" y="80"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dka-BX-avm">
-            <objects>
-                <viewController id="dW9-55-x4H" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y67-W8-MYo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="GtN-Kp-0u4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HwU-YC-8Re" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2978" y="80"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="26L-gg-Ka7">
             <objects>
@@ -315,21 +234,15 @@
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="LogoMarvel" width="650" height="650"/>
-        <image name="xmark.app" catalog="system" width="128" height="114"/>
+        <image name="xmark.app" catalog="system" width="32" height="32"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
